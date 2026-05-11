@@ -8,7 +8,7 @@ JRI 정책연구 보고서 작성 표준 (톤·서식·인용)
 
 * 최신 톤 가이드: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/tone/latest.md>
 * 최신 서식 안내: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/format/latest.md>
-* 인용 표기법: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/citation/latest.md>
+* 최신 인용 표기법: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/citation/latest.md>
 
 ## 구조
 
@@ -16,12 +16,20 @@ JRI 정책연구 보고서 작성 표준 (톤·서식·인용)
 ji-report-standards/
 ├── tone/        보고서 본문 톤·bullet 규칙
 │   ├── latest.md            → 현재 권장 버전
-│   └── YYYY-MM-DD.md        → 시점별 동결 버전
+│   └── YYYY-MM-DD-N.md      → 시점별 동결 버전 (N: 같은 날 연번)
 ├── format/      장·절 구조, 표·그림 캡션, 서식 docx/hwpx 안내
-├── citation/    인용 표기법 (출판 예정)
-├── examples/    적용 사례 (적용 전후 비교)
+├── citation/    인용 표기법 (제주연구원 인용표기 지침 기반)
 └── CHANGELOG.md
 ```
+
+## 버전 명명 규칙
+
+* 파일명: `YYYY-MM-DD-N.md` (예: `2026-05-11-2.md`)
+  * 같은 날 여러 업데이트 시 연번 증가
+  * 첫 버전도 `-1`을 명시하여 일관성 유지
+* `latest.md`는 항상 최신 버전을 가리킴
+* Git tag로 안정 URL 확보 가능
+  * 예: `https://raw.githubusercontent.com/z0nam/ji-report-standards/v2026-05-11-2/tone/latest.md`
 
 ## 사용 방법
 
